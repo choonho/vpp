@@ -74,6 +74,10 @@ if ENABLE_SNAT_PLUGIN
 include snat.am
 endif
 
+if ENABLE_ELB_PLUGIN
+include elb.am
+endif
+
 include ../suffix-rules.mk
 
 # Remove *.la files
